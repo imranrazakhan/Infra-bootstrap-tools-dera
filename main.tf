@@ -40,6 +40,7 @@ module "gke" {
   source                      = "terraform-google-modules/kubernetes-engine/google//modules/private-cluster"
   project_id                  = var.project_id
   name                        = "${var.cluster_name}-${var.env_name}"
+  version                     = "~> 21.2"
   regional                    = true
   region                      = var.region
   zones                       = var.zones
