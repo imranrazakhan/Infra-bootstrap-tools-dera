@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: apps/wabbit-rk5-gke/
-    repoURL: https://github.com/kusznerr/sample-gke-argo-apps
+    repoURL: https://github.com/imranrazakhan/sample-gke-argo-apps.git
     targetRevision: HEAD
   syncPolicy:
     automated:
