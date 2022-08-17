@@ -3,6 +3,11 @@ provider "google" {
   region      = var.region
 }
 
+provider "google-beta" {
+  project     = var.project_id
+  region      = var.region
+}
+
 # https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/integer
 resource "random_integer" "int" {
   min = 100
