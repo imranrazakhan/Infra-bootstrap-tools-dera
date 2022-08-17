@@ -1,11 +1,13 @@
 provider "google" {
   project     = var.project_id
   region      = var.region
+  credentials = var.gcp_credentials
 }
 
 provider "google-beta" {
   project     = var.project_id
   region      = var.region
+  credentials = var.gcp_credentials
 }
 
 # https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/integer
