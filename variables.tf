@@ -1,6 +1,6 @@
-variable "gcp-credentials-dera" {
+variable "gcp_credentials" {
   description = "Credentials set in TFE workspace"
-  default="gcp-credentials-dera"
+  default="gcp_credentials"
 }
 
 variable "project_id" {
