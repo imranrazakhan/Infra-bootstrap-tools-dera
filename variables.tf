@@ -1,11 +1,11 @@
-variable "GOOGLE_CREDENTIALS" {
+variable "gcp-credentials-dera" {
   description = "Credentials set in TFE workspace"
-  default="xxx"
+  default="gcp-credentials-dera"
 }
 
 variable "project_id" {
-  description = "your_project_id"
-  default= "wabbit-rk5"
+  description = "dera-infra-dev"
+  default= "dera-infra-dev"
 }
 
 variable "region" {
@@ -20,12 +20,12 @@ variable "zones" {
 
 variable "cluster_name" {
   description = "The name for the GKE cluster"
-  default     = "rafal-gke"
+  default     = "dera-gke"
 }
 
 variable "env_name" {
   description = "The environment for the GKE cluster"
-  default     = "prod"
+  default     = "dev"
 }
 variable "network" {
   description = "The VPC network created to host the cluster in"
