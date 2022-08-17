@@ -1,8 +1,3 @@
-provider "google" {
-  project     = var.project_id
-  region      = var.region
-}
-
 module "gke_auth" {
   source = "terraform-google-modules/kubernetes-engine/google//modules/auth"
   depends_on   = [module.gke]
